@@ -1,0 +1,523 @@
+<!--
+
+=========================================================
+* Impact Design System - v1.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/impact-design-system
+* Copyright 2010 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/impact-design-system/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Impact - Landing Page</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Impact - Landing Page">
+
+    <!-- Canonical SEO -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="canonical" href="https://www.creative-tim.com/product/impact-design-system" />
+
+    <!--  Social tags      -->
+    <meta name="keywords" content="impact design system, design system, login, form, table, tables, calendar, card, cards, navbar, modal, icons, icons, map, chat, carousel, menu, datepicker, gallery, slider, date, sidebar, social, dropdown, search, tab, nav, footer, date picker, forms, tabs, time, button, select, input, timeline, cart, car, fullcalendar, about us, invoice, account, chat, log in, blog, profile, portfolio, landing page, ecommerce, shop, landing, register, app, contact, one page, sign up, signup, store, bootstrap 4, bootstrap4, dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, impact, impact ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit, impact dashboard">
+    <meta name="description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Impact Design System by Themesberg">
+    <meta itemprop="description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
+
+    <meta itemprop="image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@themesberg">
+    <meta name="twitter:title" content="Impact Design System by Themesberg">
+
+    <meta name="twitter:description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
+    <meta name="twitter:creator" content="@themesberg">
+    <meta name="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg">
+
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="Impact Design System by Themesberg" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demo.themesberg.com/impact-design-system/" />
+    <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg" />
+    <meta property="og:description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included." />
+    <meta property="og:site_name" content="Themesberg" />
+
+    <!-- Favicon -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fontawesome -->
+    <link type="text/css" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Nucleo icons -->
+    <link rel="stylesheet" href="../../dashboard/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+
+    <!-- Prism -->
+    <link type="text/css" href="../../vendor/prismjs/themes/prism.css" rel="stylesheet">
+
+    <!-- Front CSS -->
+    <link type="text/css" href="../css/front.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141734189-1"></script>
+<script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-141734189-1'); </script> -->
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .form-modal {
+        position: relative;
+        width: 450px;
+        height: auto;
+        margin-top: 4em;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1)
+    }
+    
+    .form-modal button {
+        cursor: pointer;
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1em;
+        z-index: 2;
+        outline: none;
+        background: #fff;
+        transition: 0.2s;
+    }
+    
+    .form-modal .btn {
+        border-radius: 20px;
+        border: none;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 0.8em 1em 0.8em 1em!important;
+        transition: 0.5s;
+        border: 1px solid #ebebeb;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+    
+    .form-modal .login,
+    .form-modal .signup {
+        background: #57b846;
+        color: #fff;
+    }
+    
+    .form-modal .login:hover,
+    .form-modal .signup:hover {
+        background: #222;
+    }
+    
+    .form-toggle {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .form-toggle button {
+        width: 50%;
+        float: left;
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+        border: none;
+        transition: 0.2s;
+        font-size: 1.1em;
+        font-weight: bold;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    .form-toggle button:nth-child(1) {
+        border-bottom-right-radius: 20px;
+    }
+    
+    .form-toggle button:nth-child(2) {
+        border-bottom-left-radius: 20px;
+    }
+    
+    #login-toggle {
+        background: #57b846;
+        color: #ffff;
+    }
+    
+    .form-modal form {
+        position: relative;
+        width: 90%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #login-form,
+    #signup-form {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+    }
+    
+    #signup-form {
+        display: none;
+    }
+    
+    #login-form button,
+    #signup-form button {
+        width: 100%;
+        margin-top: 0.5em;
+        padding: 0.6em;
+    }
+    
+    .form-modal input {
+        position: relative;
+        width: 100%;
+        font-size: 1em;
+        padding: 1.2em 1.7em 1.2em 1.7em;
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+        border-radius: 20px;
+        border: none;
+        background: #ebebeb;
+        outline: none;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+    
+    .form-modal input:focus,
+    .form-modal input:active {
+        transform: scaleX(1.02);
+    }
+    
+    .form-modal input::-webkit-input-placeholder {
+        color: #222;
+    }
+    
+    .form-modal p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .form-modal p a {
+        color: #57b846;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    
+    .form-modal p a:hover {
+        color: #222;
+    }
+    
+    .form-modal i {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateX(-10%) translateY(-50%);
+    }
+    
+    .fa-google {
+        color: #dd4b39;
+    }
+    
+    .fa-linkedin {
+        color: #3b5998;
+    }
+    
+    .fa-windows {
+        color: #0072c6;
+    }
+    
+    .-box-sd-effect:hover {
+        box-shadow: 0 4px 8px hsla(210, 2%, 84%, .2);
+    }
+    
+    @media only screen and (max-width:500px) {
+        .form-modal {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width:400px) {
+        i {
+            display: none!important;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Google Tag Manager (noscript)
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header-global">
+        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-light navbar-theme-primary">
+            <div class="container">
+                <a class="navbar-brand @@logo_classes" href="../../index.html">
+                    <img class="navbar-brand-dark common" src="https://contitouch.co.zw/img/hammer&tonguesafricaholdings.png" height="35" alt="Logo light">
+                    <img class="navbar-brand-light common" src="https://contitouch.co.zw/img/hammer&tonguesafricaholdings.png" height="35" alt="Logo dark">
+                </a>
+                <div class="navbar-collapse collapse" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="../../index.html">
+                                    <img src="../assets/img/brand/dark.svg" height="35" alt="Logo Impact">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <a href="#navbar_global" role="button" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover justify-content-center">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">How To Bid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Rules of Auction</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-md btn-secondary animate-up-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Welcome(Start Here) <i class="fa-solid fa-angle-down"></i>
+                      </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> (Existing User) Login</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-file-invoice"></i> (New User) Create Account</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Auctions</a>
+                        <li role="separator" class="divider"></li>
+                        <h6 class="dropdown-item homerangu">Home</h6>
+                        <p class="dropdown-item"><i class="fa-solid fa-phone"></i> +263 (242) 748 118/20 (Harare)</p>
+                        <p class="dropdown-item"><i class="fa-solid fa-phone"></i> +263 (242) 748 118/20 (Bulawayo)</p>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-street-view"></i> View All Auctions</a>
+
+
+
+                    </div>
+
+                </div>
+                <div class="d-flex d-lg-none align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <!-- Hero -->
+
+        <section class="brtyty bg-soft">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 mb-12">
+                        <div class="card shadow-soft border-light">
+
+                            <div class="row card-body">
+
+                                <div class="form-modal">
+
+                                    <div class="form-toggle">
+                                        <button id="login-toggle" onclick="toggleLogin()">log in</button>
+                                        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+                                    </div>
+
+                                    <div id="login-form">
+                                        <form>
+                                            <input type="text" placeholder="Enter email or username" />
+                                            <input type="password" placeholder="Enter password" />
+                                            <button type="button" class="btn login">login</button>
+                                            <p><a href="javascript:void(0)">Forgotten account</a></p>
+                                            <hr/>
+
+                                        </form>
+                                    </div>
+
+                                    <div id="signup-form">
+                                        <form>
+                                            <input type="email" placeholder="Enter your email" />
+                                            <input type="text" placeholder="Choose username" />
+                                            <input type="password" placeholder="Create password" />
+                                            <button type="button" class="btn signup">create account</button>
+                                            <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+                                            <hr/>
+
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="section section-lg pb-5 bg-soft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="mb-4">When Our Hammer Falls The Market Jumps</h2>
+                        <p class="lead mb-5">Join over <span class="font-weight-bolder">300,000+</span>Bidders</p>
+
+                    </div>
+                    <div class="col-12 text-center">
+                        <!-- Button Modal -->
+                        <a href="#" class="btn btn-secondary animate-up-2"><span class="mr-2"><i class="fas fa-hand-pointer"></i></span>Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer section pt-6 pt-md-8 pt-lg-10 pb-3 bg-primary text-white overflow-hidden">
+            <div class="pattern pattern-soft top"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a class="footer-brand mr-lg-5 d-flex" href="../../index.html">
+                            <img src="https://contitouch.co.zw/img/hammer&tonguesafricaholdings.png" height="35" class="mr-3" alt="Footer logo">
+                        </a>
+                        <p class="my-4">We are the first & only auctioneers to have a world-class online auction system and our expertise has seen us conduct auction sales far and wide in areas such as Chiredzi, Hwange, Victoria Falls, Mutare and Zambia.</p>
+
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0">
+                        <h6>Contact Us</h6>
+                        <ul class="links-vertical">
+                            <li><a target="_blank" href="#">Harare</a></li>
+                            <li><a target="_blank" href="#">Bulawayo</a></li>
+                            <li><a target="_blank" href="#">Chatbot</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0">
+                        <h6>My Account</h6>
+                        <ul class="links-vertical">
+                            <li><a target="_blank" href="#">My Dashboard</a></li>
+                            <li><a target="_blank" href="#">My Bids</a></li>
+                            <li><a target="_blank" href="#">Support</a></li>
+                            <li><a target="_blank" href="#">License</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <h6>Subscribe</h6>
+                        <p class="font-small">The latest Impact news, articles, and resources, sent straight to your inbox every month.</p>
+                        <form action="#">
+                            <div class="form-row">
+                                <div class="col-8">
+                                    <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-secondary btn-block"><span>Subscribe</span></button>
+                                </div>
+                            </div>
+                        </form>
+                        <small class="mt-2 form-text">We’ll never share your details. See our <a href="#" class="font-weight-bold text-underline">Privacy Policy</a></small>
+                    </div>
+                </div>
+                <hr class="my-4 my-lg-5">
+                <div class="row">
+                    <div class="col pb-4 mb-md-0">
+                        <div class="d-flex text-center justify-content-center align-items-center">
+                            <p class="font-weight-normal mb-0">© <a href="www.contitouch.co.zw" target="_blank">Powered By Contitouch Technologies</a><span class="current-year"></span>. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Core -->
+    <script src="../../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../vendor/headroom.js/dist/headroom.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="../../vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="../../vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="../../vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="../../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Impact JS -->
+    <script src="../assets/js/front.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20e5c381b7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function toggleSignup() {
+            document.getElementById("login-toggle").style.backgroundColor = "#fff";
+            document.getElementById("login-toggle").style.color = "#222";
+            document.getElementById("signup-toggle").style.backgroundColor = "#57b846";
+            document.getElementById("signup-toggle").style.color = "#fff";
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-form").style.display = "block";
+        }
+
+        function toggleLogin() {
+            document.getElementById("login-toggle").style.backgroundColor = "#57B846";
+            document.getElementById("login-toggle").style.color = "#fff";
+            document.getElementById("signup-toggle").style.backgroundColor = "#fff";
+            document.getElementById("signup-toggle").style.color = "#222";
+            document.getElementById("signup-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
